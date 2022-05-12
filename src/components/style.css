@@ -1,0 +1,182 @@
+:root {
+  --accent-dark:#ffff;
+  --bg-dark: #060606;
+  --accent-light:black;
+  --bg-light:#f1e5e5;
+}
+
+body {
+    /* margin-left: 50px; */
+    margin: 0px;
+    /* margin-right: 50px; */
+    
+}
+
+#Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+#nav {
+    display: flex;
+    gap: 20px;
+    margin-left: 250px;
+}
+
+#ss {
+    display: flex;
+    gap: 20px;
+}
+
+#line {
+    margin: 0px;
+    background-color: black;
+}
+
+span {
+    color: red;
+}
+
+form {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+    height: 42px;
+  }
+  input {
+    height: 40px;
+    width: 0;
+    padding: 0 27px 0 15px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    outline: none;
+    background: transparent;
+    transition: .4s cubic-bezier(0, 0.8, 0, 1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+  }
+  input:focus {
+    width: 300px;
+    z-index: 1;
+    border-bottom: 2px solid #000000;
+  }
+  button {
+    background: var(--bg-dark);
+    border: none;
+    height: 40px;
+    width: 42px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
+  button:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: var(--bg-light);
+}
+  .basket{
+    height:40px;
+    width:40px;
+  }
+
+#img1 {
+  height: 500px;
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-row-end: 4;
+  grid-column-end: 1;
+}
+
+h1#text1{
+  font-size: 70px;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 1;
+  grid-column-end: 2;
+}
+
+#img2 {
+  height: 200px;
+  grid-column-end: auto;
+  margin-top: 55px;
+  align-self: center;
+  justify-self: center;
+}
+#container-body {
+  display: grid;
+  grid-template-rows: 215px 160px 199px 105px;
+  grid-template-columns: 780px 338px 240px;
+  grid-gap: 2vw;
+}
+
+#reklama {
+  align-self: center;
+  justify-self: center;
+}
+
+#img3{
+  height: 130px;
+  margin-bottom: 20px;
+  justify-self: center;
+  align-self: center;
+}
+
+#gott {
+  justify-self: center;
+  font-size: 17px;
+}
+
+#text2{
+  grid-row-start: 4;
+  grid-column-start: 2;
+  grid-row-end: 4;
+  grid-column-end: 3;
+}
+
+#img4 {
+  height: 200px;
+}
+
+#img5 {
+  height: 70px;
+}
+
+#product {
+  color:red;
+}
+
+#a1 {
+  color:red;
+}
+#a2 {
+  color:red;
+}
+#a3 {
+  color:red;
+}
+#a4 {
+  color:red;
+}
+#a5 {
+  color:red;
+}
+
+.layout {
+  background-color: var(--bg-light);
+  color:var(--accent-light);
+}
+
+.layout.dark {
+  background-color: var(--bg-dark);
+  color:var(--accent-dark);
+}
